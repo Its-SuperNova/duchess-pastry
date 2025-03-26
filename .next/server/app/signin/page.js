@@ -1,0 +1,16 @@
+const CHUNK_PUBLIC_PATH = "server/app/signin/page.js";
+const runtime = require("../../chunks/ssr/[turbopack]_runtime.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_66bdff._.js");
+runtime.loadChunk("server/chunks/ssr/[root of the server]__ea5163._.js");
+runtime.loadChunk("server/chunks/ssr/app_db13a2._.js");
+runtime.loadChunk("server/chunks/ssr/_624839._.js");
+runtime.loadChunk("server/chunks/ssr/app_5c03d3._.css");
+runtime.loadChunk("server/chunks/ssr/node_modules_16929d._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_next_d8c3f9._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_@auth_core_b37750._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_jose_dist_node_esm_bef28e._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_@radix-ui_react-icons_dist_react-icons_esm_3ca987.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_0f38df._.js");
+runtime.loadChunk("server/chunks/ssr/[root of the server]__236aff._.js");
+runtime.getOrInstantiateRuntimeModule("[project]/.next-internal/server/app/signin/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/signin/page.tsx [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)", CHUNK_PUBLIC_PATH);
+module.exports = runtime.getOrInstantiateRuntimeModule("[project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/signin/page { METADATA_0 => \"[project]/app/favicon.ico.mjs { IMAGE => \\\"[project]/app/favicon.ico [app-rsc] (static)\\\" } [app-rsc] (structured image object, ecmascript, Next.js server component)\", MODULE_1 => \"[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js server component)\", MODULE_2 => \"[project]/node_modules/next/dist/client/components/not-found-error.js [app-rsc] (ecmascript, Next.js server component)\", MODULE_3 => \"[project]/app/signin/page.tsx [app-rsc] (ecmascript, Next.js server component)\" } [app-rsc] (ecmascript)", CHUNK_PUBLIC_PATH).exports;
