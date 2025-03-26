@@ -1,20 +1,14 @@
-// import Header from "@/components/block/Header";
-import FAQBlock from "@/components/block/FAQBlock";
-import FeaturesBlock from "@/components/block/FeaturesBlock";
-import FooterBlock from "@/components/block/FooterBlock";
 import Header from "@/components/block/Header";
-import HeroBlock from "@/components/block/HeroBlock";
-// import PriceBlock from "@/components/block/PriceBlock";
-
+import Hero from "@/components/block/hero";
 export default function Home() {
   return (
-    <div className="p-2">
+    <div
+      className="h-[90vh] relative bg-gradient-to-b 
+  from-pink-200 via-white to-white 
+  dark:from-[#551e4a] dark:via-black dark:to-black"
+    >
       <Header />
-      <HeroBlock />
-      <FeaturesBlock />
-      {/* <PriceBlock /> */}
-      <FAQBlock />
-      <FooterBlock />
+      <Hero />
     </div>
   );
 }

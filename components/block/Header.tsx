@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 import { ModeToggle } from "../ui/ModeToggle";
 import { auth } from "@/auth";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Image from "next/image";
 import {
   Popover,
   PopoverContent,
@@ -13,9 +14,14 @@ const Header = async () => {
   const session = await auth();
 
   return (
-    <div className="   items-center flex w-full justify-between px-2 py-4">
+    <div className="   items-center flex w-full justify-between px-3 py-4">
       <Link href={"/"} className=" font-antonsc  text-3xl  ">
-        portfolio<span className="text-orange-700">forge</span>
+          <Image
+            src="/svg/Duchess.svg"
+            alt="Duchess Logo"
+            width={50}
+            height={50}
+          />
       </Link>
       <nav className="flex space-x-3 justify-center align-middle items-center ">
         <ModeToggle />
@@ -41,7 +47,7 @@ const Header = async () => {
             </PopoverContent>
           </Popover>
         ) : (
-          <Button asChild>
+          <Button asChild className="rounded-full">
             <Link href={"/signin"}>Signin</Link>
           </Button>
         )}
