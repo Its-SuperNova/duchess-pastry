@@ -26,7 +26,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Image Carousel with Fixed Aspect Ratio */}
+      {/* Image Carousel*/}
       <div className="w-full max-w-[736px] mx-auto">
         <Swiper
           modules={[Pagination]}
