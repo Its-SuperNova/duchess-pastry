@@ -87,3 +87,16 @@ body {
   background-color: var(--background);
   border-radius: 10px;
 }
+/* Increase size and visibility of pagination dots */
+.swiper-custom .swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.7;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Make active dot more visible */
+.swiper-custom .swiper-pagination-bullet-active {
+  background: white !important;
+  opacity: 1;
+  transform: scale(1.3);
+}
