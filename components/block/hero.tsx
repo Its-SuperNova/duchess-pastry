@@ -19,7 +19,7 @@ const categories = [
 
 const Hero = () => {
   return (
-    <div className="h-screen px-3 flex flex-col gap-4">
+    <div className="px-3 flex flex-col gap-4 pb-[50px]">
       {/* Search Bar & Filter */}
       <div className="flex justify-between items-center gap-2">
         <div className="relative w-full">
@@ -30,7 +30,7 @@ const Hero = () => {
             className="w-full pl-10 pr-3 py-2 rounded-[20px] focus:outline-none focus:ring-1 focus:ring-black"
           />
         </div>
-        <div className="bg-white h-[41px] w-[48px] rounded-lg flex justify-center items-center">
+        <div className="bg-white dark:bg-black h-[41px] w-[48px] rounded-lg flex justify-center items-center">
           <IoFilter className="text-[#523435]" />
         </div>
       </div>
