@@ -2,28 +2,17 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { FaStar, FaHeart, FaRegHeart } from "react-icons/fa6";
 import { BiSolidOffer } from "react-icons/bi";
-import { FaRegCircleDot } from "react-icons/fa6";
 interface ProductCardProps {
   name: string;
-  price: number;
-  preparationTime: number;
-  distance: number;
   rating: number;
   imageUrl: string;
-  discount?: {
-    percentage: number;
-    maxAmount: number;
-  };
+
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
   name,
-  price,
-  preparationTime,
-  distance,
   rating,
   imageUrl,
-  discount,
 }) => {
   const [isLiked, setIsLiked] = useState(false);
 
@@ -39,7 +28,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
         />
         <div className=" absolute top-4 left-4 bg-white font-semibold text-black px-3 py-1 rounded-full flex justify-center items-center space-x-2 text-[16px]">
           <FaStar className="text-yellow-400" />
-          <p>4.8</p>
+          <p>{rating}</p>
         </div>
         <button
           onClick={() => setIsLiked(!isLiked)}

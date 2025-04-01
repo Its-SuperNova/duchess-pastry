@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/app/antonsc_7867705d.module.css"],"sourcesContent":["@font-face {\n    font-family: 'AntonSC';\n    src: url('@vercel/turbopack-next/internal/font/local/font?{%22path%22:%22./fonts/Tanker_Complete/Fonts/OTF/Tanker-Regular.otf%22,%22preload%22:true,%22has_size_adjust%22:true}') format('opentype');\n    font-display: swap;\n    font-weight: 100 900;\n}\n\n@font-face {\n    font-family: 'AntonSC Fallback';\n    src: local(\"Arial\");\n    ascent-override: 115.45%;\ndescent-override: 30.02%;\nline-gap-override: 10.39%;\nsize-adjust: 86.62%;\n\n}\n\n.className {\n    font-family: 'AntonSC', 'AntonSC Fallback';\n    \n}\n.variable {\n    --font-antonsc: 'AntonSC', 'AntonSC Fallback';\n}\n\n"],"names":[],"mappings":"AAAA;;;;;;;AAOA;;;;;;;;;AAUA;;;;AAIA"}},
-    {"offset": {"line": 24, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

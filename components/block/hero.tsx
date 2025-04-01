@@ -3,13 +3,13 @@ import React from "react";
 import { FiSearch } from "react-icons/fi";
 import { IoFilter } from "react-icons/io5";
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
 import Link from "next/link";
 import ProductCard from "./productcard";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+ import { Pagination } from "swiper/modules";
+ import "swiper/css";
+ import "swiper/css/pagination";
+ 
 const categories = [
   { name: "Cup Cake", image: "/images/categories/cupcake.png" },
   { name: "Cookies", image: "/images/categories/cookies.png" },
@@ -34,7 +34,33 @@ const Hero = () => {
           <IoFilter className="text-[#523435]" />
         </div>
       </div>
-
+      <div className="w-full max-w-[736px] mx-auto">
+         <Swiper
+           modules={[Pagination]}
+           pagination={{ clickable: true }}
+           loop={true}
+           spaceBetween={20}
+           className="rounded-[20px] swiper-custom"
+         >
+           {["image1.png", "image2.png", "image3.png"].map((img, index) => (
+             <SwiperSlide key={index}>
+               <div
+                 className="relative w-full"
+                 style={{ aspectRatio: "736 / 414" }}
+               >
+                 <Image
+                   src={`/images/${img}`}
+                   alt={`Slide ${index + 1}`}
+                   fill
+                   className="rounded-[20px] object-cover"
+                   quality={100}
+                   priority={index === 0}
+                 />
+               </div>
+             </SwiperSlide>
+           ))}
+         </Swiper>
+       </div>
       {/* Categories */}
       <div className="flex w-full justify-between items-center px-1">
         <h2 className="text-lg">Categories</h2>
@@ -71,15 +97,8 @@ const Hero = () => {
       </div>
       <ProductCard
         name="Red Velvet CheeseCake"
-        price={150}
-        preparationTime={43}
-        distance={1.7}
         rating={4.0}
         imageUrl="/images/red-velvet.png"
-        discount={{
-          percentage: 20,
-          maxAmount: 50,
-        }}
       />
     </div>
   );

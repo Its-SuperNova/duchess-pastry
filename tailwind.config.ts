@@ -18,7 +18,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['var(--font-inter)'],
         antonsc: ["var(--font-antonsc)"],
         schabo: ["var(--font-geist-schabo)"],
         w95fa: ["var(--font-geist-w95fa)"],
