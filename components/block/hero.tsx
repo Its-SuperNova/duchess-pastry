@@ -8,6 +8,8 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Link from "next/link";
+import ProductCard from "./productcard";
+
 const categories = [
   { name: "Cup Cake", image: "/images/categories/cupcake.png" },
   { name: "Cookies", image: "/images/categories/cookies.png" },
@@ -17,7 +19,7 @@ const categories = [
 
 const Hero = () => {
   return (
-    <div className="px-3 flex flex-col gap-4 pb-[100px]">
+    <div className="h-screen px-3 flex flex-col gap-4">
       {/* Search Bar & Filter */}
       <div className="flex justify-between items-center gap-2">
         <div className="relative w-full">
@@ -33,34 +35,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Image Carousel*/}
-      <div className="w-full max-w-[736px] mx-auto">
-        <Swiper
-          modules={[Pagination]}
-          pagination={{ clickable: true }}
-          loop={true}
-          spaceBetween={20}
-          className="rounded-[20px] swiper-custom"
-        >
-          {["image1.png", "image2.png", "image3.png"].map((img, index) => (
-            <SwiperSlide key={index}>
-              <div
-                className="relative w-full"
-                style={{ aspectRatio: "736 / 414" }}
-              >
-                <Image
-                  src={`/images/${img}`}
-                  alt={`Slide ${index + 1}`}
-                  fill
-                  className="rounded-[20px] object-cover"
-                  quality={100}
-                  priority={index === 0}
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
       {/* Categories */}
       <div className="flex w-full justify-between items-center px-1">
         <h2 className="text-lg">Categories</h2>
@@ -79,7 +53,7 @@ const Hero = () => {
               <Image
                 src={category.image}
                 alt={category.name}
-                layout="fill"
+                fill
                 className="rounded-full object-cover"
               />
             </div>
@@ -87,17 +61,26 @@ const Hero = () => {
           </div>
         ))}
       </div>
-      <div className="mt-5 flex flex-col gap-4">
-        <div className="flex w-full justify-between items-center px-1">
-          <h2 className="text-lg">Featured Products</h2>
-          <div>
-            <Link href="/categories" className="font-medium text-[#d48926de]">
-              See All
-            </Link>
-          </div>
+      <div className="flex w-full justify-between items-center px-1">
+        <h2 className="text-lg">Featured Product</h2>
+        <div>
+          <Link href="/categories" className="font-medium text-[#d48926de]">
+            See All
+          </Link>
         </div>
-        <div className="h-[200px] w-full bg-[#F4ECE5] rounded-[20px]"></div>
       </div>
+      <ProductCard
+        name="Red Velvet CheeseCake"
+        price={150}
+        preparationTime={43}
+        distance={1.7}
+        rating={4.0}
+        imageUrl="/images/red-velvet.png"
+        discount={{
+          percentage: 20,
+          maxAmount: 50,
+        }}
+      />
     </div>
   );
 };

@@ -6,17 +6,26 @@ export default {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{ts,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       fontFamily: {
-        roboto: ["var(--font-robotorondensed)"],
-        sans: ["var(--font-geist-sans)"],
+        sans: ['Inter', 'sans-serif'],
         antonsc: ["var(--font-antonsc)"],
-        mono: ["var(--font-geist-mono)"],
         schabo: ["var(--font-geist-schabo)"],
-        walkway: ["var(--font-walkway)"],
         w95fa: ["var(--font-geist-w95fa)"],
+        robotocondensed: ["var(--font-robotorondensed)"],
+        geistsans: ["var(--font-geist-sans)"],
+        geistmono: ["var(--font-geist-mono)"],
+        walkway: ["var(--font-walkway)"],
       },
       colors: {
         background: "hsl(var(--background))",
