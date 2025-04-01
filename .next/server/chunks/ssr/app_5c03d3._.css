@@ -938,6 +938,10 @@ body {
   margin-top: 1rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -1015,6 +1019,10 @@ body {
   height: 3rem;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .h-2 {
   height: .5rem;
 }
@@ -1059,6 +1067,10 @@ body {
   height: 1px;
 }
 
+.h-\[200px\] {
+  height: 200px;
+}
+
 .h-\[41px\] {
   height: 41px;
 }
@@ -1081,10 +1093,6 @@ body {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-16 {
-  height: 4rem;
 }
 
 .max-h-60 {
@@ -1125,6 +1133,10 @@ body {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .w-2 {
@@ -1193,10 +1205,6 @@ body {
 
 .w-full {
   width: 100%;
-}
-
-.w-16 {
-  width: 4rem;
 }
 
 .min-w-\[8rem\] {
@@ -1579,6 +1587,11 @@ body {
   --tw-border-opacity: 1;
 }
 
+.bg-\[\#F4ECE5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 236 229 / var(--tw-bg-opacity, 1));
+}
+
 .bg-accent {
   background-color: hsl(var(--accent));
 }
@@ -1679,42 +1692,18 @@ body {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
-.from-pink-200 {
-  --tw-gradient-from: #fbcfe8 var(--tw-gradient-from-position);
-  --tw-gradient-to: #fbcfe800 var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-\[\] {
-  --tw-gradient-from: var(--tw-gradient-from-position);
-  --tw-gradient-to: #fff0 var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-\[\#523435\] {
-  --tw-gradient-from: #523435 var(--tw-gradient-from-position);
-  --tw-gradient-to: #52343500 var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-\[\#F4ECE5\] {
-  --tw-gradient-from: #f4ece5 var(--tw-gradient-from-position);
-  --tw-gradient-to: #f4ece500 var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .from-\[\#FFD9B8\] {
   --tw-gradient-from: #ffd9b8 var(--tw-gradient-from-position);
   --tw-gradient-to: #ffd9b800 var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.via-white {
+.via-\[\#ffffff\] {
   --tw-gradient-to: #fff0 var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
-.to-white {
+.to-\[\#ffffff\] {
   --tw-gradient-to: #fff var(--tw-gradient-to-position);
 }
 
@@ -1772,6 +1761,11 @@ body {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.px-1 {
+  padding-left: .25rem;
+  padding-right: .25rem;
 }
 
 .px-2 {
@@ -1844,17 +1838,16 @@ body {
   padding-bottom: 2rem;
 }
 
-.px-1 {
-  padding-left: .25rem;
-  padding-right: .25rem;
-}
-
 .pb-2 {
   padding-bottom: .5rem;
 }
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pb-\[100px\] {
+  padding-bottom: 100px;
 }
 
 .pl-10 {
@@ -2013,9 +2006,13 @@ body {
   letter-spacing: .1em;
 }
 
-.text-\[\#b80029\] {
+.text-\[\#523435\] {
   --tw-text-opacity: 1;
-  color: rgb(184 0 41 / var(--tw-text-opacity, 1));
+  color: rgb(82 52 53 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#d48926de\] {
+  color: #d48926de;
 }
 
 .text-accent-foreground {
@@ -2094,48 +2091,6 @@ body {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#523435\] {
-  --tw-text-opacity: 1;
-  color: rgb(82 52 53 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#\#523435\] {
-  color: # #523435;
-}
-
-.text-\[\] {
-  color: ;
-}
-
-.text-\[\#743c3e\] {
-  --tw-text-opacity: 1;
-  color: rgb(116 60 62 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#951e22\] {
-  --tw-text-opacity: 1;
-  color: rgb(149 30 34 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#c6282e\] {
-  --tw-text-opacity: 1;
-  color: rgb(198 40 46 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#c68228\] {
-  --tw-text-opacity: 1;
-  color: rgb(198 130 40 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#86571a\] {
-  --tw-text-opacity: 1;
-  color: rgb(134 87 26 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#d48926de\] {
-  color: #d48926de;
 }
 
 .underline {
@@ -2734,12 +2689,6 @@ body {
 .dark\:bg-gray-700:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
-}
-
-.dark\:from-\[\#551e4a\]:is(.dark *) {
-  --tw-gradient-from: #551e4a var(--tw-gradient-from-position);
-  --tw-gradient-to: #551e4a00 var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .dark\:from-\[\#523435\]:is(.dark *) {

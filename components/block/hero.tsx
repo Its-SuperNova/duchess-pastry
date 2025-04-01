@@ -8,11 +8,18 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Link from "next/link";
+const categories = [
+  { name: "Cup Cake", image: "/images/categories/cupcake.png" },
+  { name: "Cookies", image: "/images/categories/cookies.png" },
+  { name: "cake", image: "/images/categories/cake.png" },
+  { name: "Breads", image: "/images/categories/bread.png" },
+];
+
 const Hero = () => {
   return (
-    <div className="h-screen px-3 flex flex-col gap-4">
+    <div className="px-3 flex flex-col gap-4 pb-[100px]">
       {/* Search Bar & Filter */}
-      <div className="flex justify-betwe`en items-center gap-2">
+      <div className="flex justify-between items-center gap-2">
         <div className="relative w-full">
           <FiSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#523435] text-xl" />
           <input
@@ -56,12 +63,40 @@ const Hero = () => {
       </div>
       {/* Categories */}
       <div className="flex w-full justify-between items-center px-1">
-        <h2 className="text-lg ">Categories</h2>
+        <h2 className="text-lg">Categories</h2>
         <div>
-          <Link href="/some-path" className="font-medium text-[#d48926de]">
+          <Link href="/categories" className="font-medium text-[#d48926de]">
             See All
           </Link>
         </div>
+      </div>
+
+      {/* Categories Grid */}
+      <div className="grid grid-cols-4 gap-4 mt-2">
+        {categories.map((category, index) => (
+          <div key={index} className="flex flex-col items-center">
+            <div className="w-16 h-16 relative">
+              <Image
+                src={category.image}
+                alt={category.name}
+                layout="fill"
+                className="rounded-full object-cover"
+              />
+            </div>
+            <p className="text-sm mt-2">{category.name}</p>
+          </div>
+        ))}
+      </div>
+      <div className="mt-5 flex flex-col gap-4">
+        <div className="flex w-full justify-between items-center px-1">
+          <h2 className="text-lg">Featured Products</h2>
+          <div>
+            <Link href="/categories" className="font-medium text-[#d48926de]">
+              See All
+            </Link>
+          </div>
+        </div>
+        <div className="h-[200px] w-full bg-[#F4ECE5] rounded-[20px]"></div>
       </div>
     </div>
   );

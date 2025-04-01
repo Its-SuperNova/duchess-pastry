@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div
       className="h-[50vh] relative bg-gradient-to-b 
-  from-[#FFD9B8] via-white to-white 
+  from-[#FFD9B8] via-[#ffffff] to-[#ffffff]
   dark:from-[#523435] dark:via-black dark:to-black"
     >
       <Header />
