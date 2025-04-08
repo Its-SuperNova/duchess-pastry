@@ -1,0 +1,16 @@
+{
+  "node": {
+    "006daa9e35cc9467f3208fe82bc528ec2d6aaff4cb": {
+      "workers": {
+        "app/signout/page": {
+          "moduleId": "[project]/.next-internal/server/app/signout/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions/auth.ts [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/signout/page": "rsc"
+      }
+    }
+  },
+  "edge": {}
+}

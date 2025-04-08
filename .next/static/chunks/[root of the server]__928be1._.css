@@ -589,12 +589,32 @@ body {
   margin-bottom: .5rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .ml-auto {
   margin-left: auto;
 }
 
+.mr-2 {
+  margin-right: .5rem;
+}
+
+.mt-1 {
+  margin-top: .25rem;
+}
+
 .mt-2 {
   margin-top: .5rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .mt-auto {
@@ -646,6 +666,10 @@ body {
 
 .h-3\.5 {
   height: .875rem;
+}
+
+.h-32 {
+  height: 8rem;
 }
 
 .h-4 {
@@ -810,6 +834,10 @@ body {
 
 .max-w-\[736px\] {
   max-width: 736px;
+}
+
+.max-w-md {
+  max-width: 28rem;
 }
 
 .max-w-screen-lg {
@@ -1051,6 +1079,21 @@ body {
   border-color: rgb(220 38 38 / var(--tw-border-opacity, 1));
 }
 
+.border-\[\#D85A60\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(216 90 96 / var(--tw-border-opacity, 1));
+}
+
+.bg-\[\#D85A60\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 90 96 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#FFF8F5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 248 245 / var(--tw-bg-opacity, 1));
+}
+
 .bg-accent {
   background-color: hsl(var(--accent));
 }
@@ -1119,8 +1162,16 @@ body {
   background-image: url("../media/Banner.e5eb04fe.jpeg");
 }
 
+.bg-\[url\(\'\/images\/image1\.png\'\)\] {
+  background-image: url("/images/image1.png");
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\/pastries-banner\.jpg\'\)\] {
+  background-image: url("/pastries-banner.jpg");
 }
 
 .from-\[\#FFD9B8\] {
@@ -1140,6 +1191,10 @@ body {
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-no-repeat {
@@ -1362,6 +1417,10 @@ body {
   line-height: 1rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1393,6 +1452,11 @@ body {
 .text-\[\#523435\] {
   --tw-text-opacity: 1;
   color: rgb(82 52 53 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#D85A60\] {
+  --tw-text-opacity: 1;
+  color: rgb(216 90 96 / var(--tw-text-opacity, 1));
 }
 
 .text-\[\#d48926de\] {
@@ -1480,6 +1544,11 @@ body {
 
 .text-secondary-foreground {
   color: hsl(var(--secondary-foreground));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .text-yellow-400 {
@@ -1699,6 +1768,11 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:bg-\[\#C04A50\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 74 80 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:bg-accent:hover {
   background-color: hsl(var(--accent));
 }
@@ -1721,6 +1795,11 @@ body {
 
 .hover\:bg-secondary\/80:hover {
   background-color: hsl(var(--secondary) / .8);
+}
+
+.hover\:bg-\[\#FFF0ED\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 240 237 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:text-accent-foreground:hover {
@@ -2046,6 +2125,11 @@ body {
   background-color: rgb(23 24 28 / var(--tw-bg-opacity, 1));
 }
 
+.dark\:bg-black:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
 .dark\:bg-gray-600:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(75 85 99 / var(--tw-bg-opacity, 1));
@@ -2054,11 +2138,6 @@ body {
 .dark\:bg-gray-700:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
-}
-
-.dark\:bg-black:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .dark\:from-\[\#523435\]:is(.dark *) {
