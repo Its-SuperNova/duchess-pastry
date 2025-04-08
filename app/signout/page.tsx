@@ -17,7 +17,7 @@ export default function SignOutPage() {
           <div className="h-32 bg-cover bg-center bg-[url('/images/image1.png')]"></div>
 
             <div className="p-6">
-              <h2 className="text-xl font-semibold text-center mb-2">We'll Miss You!</h2>
+              <h2 className="text-xl font-semibold text-center mb-2">We&apos;ll Miss You!</h2>
               <p className="text-center text-muted-foreground mb-6">Are you sure you want to sign out?</p>
 
               <SignOutButtons onSignOut={handleSignOut} />
